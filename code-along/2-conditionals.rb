@@ -3,8 +3,8 @@
 # ruby 2-conditionals.rb
 
 # Booleans
-true
-false
+# true
+# false
 
 # Boolean Expressions
 puts 3 > 2
