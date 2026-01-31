@@ -28,8 +28,10 @@ bitcoin = bitcoin.to_f
 
 # 3. Inspect the bitcoin_data hash
 # puts bitcoin_data
+usd_rate = bitcoin_data["USD"]["last"]
+usd_value = bitcoin * usd_rate
 
 # 4. Display the value of the user's bitcoin
 # Sample output:
-# puts "1 Bitcoin is valued at $41405.1046 USD."
-# puts "Your Bitcoin is worth $62107.6569."
+puts "1 Bitcoin is valued at $#{usd_rate} USD."
+puts "Your Bitcoin is worth $#{usd_value} USD."
