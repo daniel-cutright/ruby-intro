@@ -10,6 +10,22 @@ diamonds = [2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "King", "Ace"]
 hearts = [2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "King", "Ace"]
 spades = [2, 3, 4, 5, 6, 7, 8, 9, 10, "Jack", "Queen", "King", "Ace"]
 
+for rank in clubs
+  puts "#{rank} of Clubs"
+end
+
+for rank in diamonds
+  puts "#{rank} of Diamonds"
+end
+
+for rank in hearts
+  puts "#{rank} of Hearts"
+end
+
+for rank in spades
+  puts "#{rank} of Spades"
+end
+
 # Sample output:
 # 2 of Clubs
 # 3 of Clubs
