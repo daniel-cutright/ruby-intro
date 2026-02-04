@@ -39,7 +39,10 @@ puts "Currently it is #{current_temperature} degrees and #{current_conditions}."
 puts "Forecast for the next 7 days:"
 
 for day in weather_data[:forecast]
-  if day[:precipitation]>0.5
-    puts "- #{day[:temperature]}"
+  precipitation_percentage = day[:precipitation] * 100
+  if day[:precipitation]>0.5 && day[:conditions]!="Rainy"
+    puts "- #{day[:temperature]} degrees and #{day[:conditions]} with a #{precipitation_percentage.to_i}% chance of rain"
+  else
+    puts "- #{day[:temperature]} degrees and #{day[:conditions]}"
   end
 end
